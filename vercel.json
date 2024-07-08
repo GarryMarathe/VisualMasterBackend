@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "builds": [
+    {
+      "src": "Backend/app.py",
+      "use": "@vercel/python"
+    }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "Backend/app.py"
+      }
+    ],
+    "env": {
+    "FLASK_APP": "Backend/app.py",
+    "FLASK_ENV": "production",  
+    "SECRET_KEY": "8b88cc50b49b3d0526a00170608644681fa82132a1eed3b9",  
+    "JWT_SECRET_KEY": "pX~-ERh5AzgZ#Be3?W9^vnKu}Vs_D",  
+    "MONGO_URI": "mongodb://localhost:27017/Master",  
+    "DEBUG": "False"
+  }
+  }
+  
